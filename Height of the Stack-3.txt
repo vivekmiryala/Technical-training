@@ -1,0 +1,11 @@
+def equalizeStacks(h1, h2, h3):
+  min_height = min(h1, h2, h3)
+  removed_from_1 = h1 - min_height
+  removed_from_2 = h2 - min_height
+  removed_from_3 = h3 - min_height
+  return min_height
+h1 = [1, 2, 1]
+h2 = [3, 2]
+h3 = [1, 1, 4, 1]
+equal_height = equalizeStacks(sum(h1), sum(h2), sum(h3))
+print(equal_height) 
